@@ -1,7 +1,41 @@
 public class Notificacao {
-    public String descricao;
-    public Canal canal;
-    public Video video;
-    public Boolean visto;
+    private String descricao;
+    private Canal canal;
+    private Video video;
+    private Boolean visto;
 
+    public Notificacao(Canal canal, Video video){
+        this.canal = canal;
+        this.video = video;
+        visto = false;
+    }
+
+    public Video viewNotificacao(){
+        visto=true;
+        return video;
+    }
+
+    public Boolean isVisto(){
+        return visto;
+    }
+
+    public void setCanal(Canal canal) {
+        this.canal = canal;
+    }
+
+    public Video getVideo() {
+        return video;
+    }
+
+    public Canal getCanal() {
+        return canal;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public void setVideo(Video video) {
+        this.video = video;
+    }
 }
