@@ -5,9 +5,14 @@ public class Playlist {
     private String nome;
     private String descricao;
     private List<Video> videos;
-    public Playlist(String nome){
-        this.nome = nome;
+
+    public Playlist(){
         videos = new ArrayList<>();
+    }
+    public Playlist(String nome){
+        this();
+        this.nome = nome;
+
     }
 
     public void setNome(String nome) {

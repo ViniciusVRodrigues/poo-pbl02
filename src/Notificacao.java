@@ -4,10 +4,13 @@ public class Notificacao {
     private Video video;
     private Boolean visto;
 
+    public Notificacao(){
+        visto=false;
+    }
     public Notificacao(Canal canal, Video video){
+        this();
         this.canal = canal;
         this.video = video;
-        visto = false;
     }
 
     public Video viewNotificacao(){

@@ -6,8 +6,14 @@ public class Video {
     private String descricao;
     private String nome;
     private List<Comentario> comentarios;
-    public Video(String nome){
+
+    public Video(){
         comentarios = new ArrayList<>();
+        volume = 50;
+        curtidas=0;
+    }
+    public Video(String nome){
+
         this.nome = nome;
     }
 
